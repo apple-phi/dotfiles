@@ -105,3 +105,12 @@ $env.NU_PLUGIN_DIRS = [
 ## Starship
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
+
+## Zoxide
+zoxide init nushell | save -f ~/.zoxide.nu
+
+## Bat 
+$env.BAT_CONFIG_PATH = ~/.config/bat.conf
+
+## winutil
+alias winutil = powershell -command "irm "https://christitus.com/win" | iex"

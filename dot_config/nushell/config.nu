@@ -901,3 +901,6 @@ use ~/.cache/starship/init.nu
 
 ## Fastfetch
 fastfetch --config ~/.config/fastfetch/config.jsonc
+
+## Zoxide
+source ~/.zoxide.nu
