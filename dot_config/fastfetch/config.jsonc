@@ -1,42 +1,103 @@
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-  "modules": [
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+      "padding": {
+        "top": 2
+      }
+    },
+    "display": {
+      "separator": " "
+    },
+    "modules": [
       "title",
-      "board",
-      "wifi",
-      "os",
-      // "kernel",
-      "uptime",
-      "battery",
-      // "packages",
-      "shell",
+      "separator",
       {
-          "type": "display",
-          "key": "Resolution",
-          "compactType": "original"
+        "type": "os",
+        "key": "\udb81\uddb3 os    ",
+        "keyColor": "yellow"
       },
-      "weather",
-      // "de",
-      // "wm",
-      // "wmtheme",
-      "terminalfont",
-      // {
-      //     "type": "terminalfont",
-      //     "key": "Font"
-      // },
       {
-          "type": "disk",
-          "folders": "/",
-          "key": "Disk"
+        "type": "kernel",
+        "key": " ker   ",
+        "keyColor": "yellow"
       },
-      "cpu",
-      "cpuusage",
-      "gpu",
       {
-          "type": "memory",
-          "key": "RAM"
+        "type": "shell",
+        "key": " sh    ",
+        "keyColor": "yellow"
       },
-      "camera",
-      "sound"
-  ]
-}
+      {
+        "type": "packages",
+        "key": "󰏖 pkg   ",
+        "keyColor": "yellow"
+      },
+      {
+        "type": "wifi",
+        "key": "\udb81\udda9 wifi  ",
+        "keyColor": "yellow"
+      },
+      {
+        "type": "localip",
+        "key": "󰩟 local ",
+        "keyColor": "yellow"
+      },
+      "break",
+      {
+        "type": "board",
+        "key": "󰌢 pc    ",
+        "keyColor": "green"
+      },
+      {
+        "type": "cpu",
+        "key": "󰻠 cpu   ",
+        "keyColor": "green"
+      },
+      {
+        "type": "gpu",
+        "key": "󰍛 gpu   ",
+        "keyColor": "green"
+      },
+      {
+        "type": "disk",
+        "key": " disk  ",
+        "keyColor": "green"
+      },
+      {
+        "type": "memory",
+        "key": "󰑭 ram   ",
+        "keyColor": "green"
+      },
+      {
+        "type": "swap",
+        "key": "󰓡 swap  ",
+        "keyColor": "green"
+      },
+      {
+        "type": "uptime",
+        "key": "󰅐 upt   ",
+        "keyColor": "green"
+      },
+      "break",
+      {
+        "type": "display",
+        "key": "󰍹       ",
+        "keyColor": "cyan"
+      },
+      {
+        "type": "sound",
+        "key": "       ",
+        "keyColor": "cyan"
+      },
+      {
+        "type": "player",
+        "key": "󰥠 player",
+        "keyColor": "cyan"
+      },
+      {
+        "type": "media",
+        "key": "󰝚 media ",
+        "keyColor": "cyan"
+      }
+    ]
+  }
+  
