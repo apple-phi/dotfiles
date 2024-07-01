@@ -6,7 +6,10 @@
       }
     },
     "display": {
-      "separator": " "
+      "separator": " ",
+      "color": {
+        "title": "green"
+      }
     },
     "modules": [
       "title",
@@ -81,22 +84,22 @@
       {
         "type": "display",
         "key": "󰍹       ",
-        "keyColor": "cyan"
+        "keyColor": "red"
       },
       {
         "type": "sound",
         "key": "       ",
-        "keyColor": "cyan"
+        "keyColor": "red"
       },
       {
         "type": "player",
         "key": "󰥠 player",
-        "keyColor": "cyan"
+        "keyColor": "red"
       },
       {
         "type": "media",
         "key": "󰝚 media ",
-        "keyColor": "cyan"
+        "keyColor": "red"
       }
     ]
   }
