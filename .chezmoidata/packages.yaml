@@ -1,0 +1,10 @@
+packages:
+  windows:
+    winget:
+      - nushell
+      - fastfetch
+      - starship
+    choco:
+      - bat
+      - oh-my-posh # to enable `oh-my-posh font install`
+      - ripgrep

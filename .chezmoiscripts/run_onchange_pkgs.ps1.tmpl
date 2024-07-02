@@ -1,0 +1,41 @@
+{{ if eq .chezmoi.os "windows" -}}
+# This .ps1 template abuses the fact that
+# Windows cares about file extensions
+# Unix cares about shebangs
+
+# Function to check if running as administrator
+Function Test-Admin {
+    $currentUser = New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())
+    $currentUser.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+}
+
+# If not running as admin, restart script with elevated privileges
+If (-Not (Test-Admin)) {
+    Throw "Please run this script with administrator privileges from an elevated terminal."
+}
+
+# Install Chocolatey packages
+{{ range .packages.windows.choco -}}
+choco install {{ . | quote }} -y --limit-output
+{{ end -}}
+
+# Install Winget packages
+{{ range .packages.windows.winget -}}
+Write-Host "Winget installing: " -NoNewline
+Write-Host {{ . | quote }}
+winget install {{ . | quote }} -e
+{{ end -}}
+
+Write-Host "Done"
+
+{{ end -}}
+
+{{ if eq .chezmoi.os "linux"}}
+#!bin/sh
+
+{{ end -}}
+
+{{ if eq .chezmoi.os "darwin"}}
+#!bin/sh
+
+{{ end -}}
