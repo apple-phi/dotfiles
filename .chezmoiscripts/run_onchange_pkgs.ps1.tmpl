@@ -27,15 +27,22 @@ winget install {{ . | quote }} -e
 {{ end -}}
 
 Write-Host "Done"
+{{ else -}}
 
-{{ end -}}
-
-{{ if eq .chezmoi.os "linux"}}
 #!bin/sh
 
-{{ end -}}
+# install homebrew
+if [ ! "$(command -v brew)" ]; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
-{{ if eq .chezmoi.os "darwin"}}
-#!bin/sh
+# install homebrew packages
+{{- range .packages.homebrew.formulae }}
+brew install {{ . }}
+{{- end }}
+{{- range .packages.homebrew.casks }}
+brew install --cask {{ . }}
+{{- end }}
+
 
 {{ end -}}

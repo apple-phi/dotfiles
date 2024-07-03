@@ -1,10 +1,39 @@
 packages:
   windows:
     winget:
+      - Bruno.Bruno # api tester
+      - fastfetch # system info
+      - fzf # fuzzy finder
       - nushell
-      - fastfetch
-      - starship
+      - starship # prompt config
     choco:
-      - bat
+      - bat # cat with wings
+      - glow # markdown viewer
       - oh-my-posh # to enable `oh-my-posh font install`
-      - ripgrep
+      - ripgrep # faster grep respecting .gitignore
+  darwin:
+    brew:
+      formulae:
+        - bat
+        - fastfetch
+        - fzf
+        - glow
+        - oh-my-posh
+        - nushell
+        - ripgrep
+        - starship
+      cask:
+        - bruno
+  linux:
+    brew:
+      formulae:
+        - bat
+        - fastfetch
+        - fzf
+        - glow
+        - oh-my-posh
+        - nushell
+        - ripgrep
+        - starship
+      cask:
+        - bruno

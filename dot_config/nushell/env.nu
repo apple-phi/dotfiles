@@ -114,3 +114,6 @@ $env.BAT_CONFIG_PATH = ~/.config/bat.conf
 
 ## winutil
 alias winutil = powershell -command "irm "https://christitus.com/win" | iex"
+
+## external
+$env.NU_EXTERNAL = ($nu.default-config-dir | path join 'external') 

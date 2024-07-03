@@ -904,3 +904,7 @@ fastfetch --config ~/.config/fastfetch/config.jsonc
 
 ## Zoxide
 source ~/.zoxide.nu
+
+## External
+source ~/.config/nushell/hooks.nu
+source ~/.config/nushell/completions.nu

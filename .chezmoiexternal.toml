@@ -1,0 +1,4 @@
+[".config/nushell/external/nu_scripts"]
+  type = "git-repo"
+  url = "https://github.com/nushell/nu_scripts.git"
+  refreshPeriod = "168h"

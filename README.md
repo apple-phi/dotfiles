@@ -1,6 +1,13 @@
 # dotfiles
 
-Managed by [chezmoi](https://www.chezmoi.io/).
+My dotfiles, managed by [chezmoi](https://www.chezmoi.io/).
+
+> Currently very Window's focused.
+
+## Future plans
+
+- [ ] Migrate to `mise-en-place` for managing toolchains (N.B. currently does not support Windows)
+- [ ] Migrate to `nix` flakes
 
 ## Installation
 
