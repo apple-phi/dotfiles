@@ -28,10 +28,6 @@ if ! chezmoi="$(command -v chezmoi)"; then
         unset chezmoi_install_script bin_dir
 fi
 
-# Log the installation result
-echo "chezmoi installed at: $(command -v chezmoi)"
-chezmoi --version
-
 # POSIX way to get script's dir: https://stackoverflow.com/a/29834779/12156188
 script_dir="$(cd -P -- "$(dirname -- "$(command -v -- "$0")")" && pwd -P)"
 
