@@ -13,6 +13,8 @@ jobs:
         CODESPACES: true
     steps:
       - uses: actions/checkout@v2
-      - run: ./install.sh
+      - run: |
+          chmod +x ./install.sh
+          ./install.sh
       - name: chezmoi data
         run: '"$HOME/.local/bin/chezmoi" data'
