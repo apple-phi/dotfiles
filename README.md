@@ -1,21 +1,28 @@
 # dotfiles
 
-My dotfiles, managed by [chezmoi](https://www.chezmoi.io/).
+My dotfiles, managed by [chezmoi](https://www.chezmoi.io/). Codespaces-compatible.
 
-> Currently very Window's focused.
-
-## Future plans
+## To-do
 
 - [ ] Migrate to `mise-en-place` for managing toolchains (N.B. currently does not support Windows)
 - [ ] Migrate to `nix` flakes
 
 ## Installation
 
+Windows
+
 ```sh
-./install.sh
+choco install chezmoi
+chezmoi init --apply apple-phi/dotfiles
 ```
 
-## Add a new stuff to the source state (your local dotfile repo)
+Linux / MacOS
+
+```sh
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply apple-phi/dotfiles
+```
+
+## Add a new stuff to the source state (the local dotfile repo)
 
 ```sh
 # for the initial addition

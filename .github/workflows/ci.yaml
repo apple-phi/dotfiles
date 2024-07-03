@@ -1,3 +1,5 @@
+# https://github.com/chezmoi/dotfiles
+
 name: ci
 
 on:
@@ -14,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          chmod +x ./install.sh
-          ./install.sh
+          chmod a+x ./bootstrap.sh
+          ./bootstrap.sh
       - name: chezmoi data
         run: '"$HOME/.local/bin/chezmoi" data'
