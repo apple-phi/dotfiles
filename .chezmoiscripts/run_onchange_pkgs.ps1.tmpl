@@ -37,10 +37,10 @@ if [ ! "$(command -v brew)" ]; then
 fi
 
 # install homebrew packages
-{{- range .packages.brew.formulae }}
+{{- range .packages.non_windows.brew.formulae }}
 brew install {{ . }}
 {{- end }}
-{{- range .packages.brew.casks }}
+{{- range .packages.non_windows.brew.cask }}
 brew install --cask {{ . }}
 {{- end }}
 
