@@ -6,6 +6,7 @@ packages:
       - fzf # fuzzy finder
       - nushell
       - starship # prompt config
+      - prefix-dev.pixi # toolchain manager
     choco:
       - bat # cat with wings
       - glow # markdown viewer
@@ -22,5 +23,6 @@ packages:
         - nushell
         - ripgrep
         - starship
+        - pixi
       cask:
         - bruno
