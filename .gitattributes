@@ -1,0 +1,6 @@
+*.toml.tmpl linguist-language=TOML
+*.yaml.tmpl linguist-language=YAML
+*.yml.tmpl linguist-language=YAML
+*.json.tmpl linguist-language=JSON
+*.ps1.tmpl linguist-language=PowerShell
+*.sh.tmpl linguist-language=Shell
