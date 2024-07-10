@@ -13,6 +13,14 @@ if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
   }
 }
 
+# Install Scoop packages
+{{ range .packages.windows.scoop.buckets -}}
+scoop bucket add {{ . | quote }}
+{{ end -}}
+{{ range .packages.windows.scoop.apps -}}
+scoop install {{ . | quote }}
+{{ end -}}
+
 # Install Chocolatey packages
 {{ range .packages.windows.choco -}}
 choco install {{ . | quote }} -y --limit-output

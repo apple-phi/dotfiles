@@ -1,18 +1,25 @@
 packages:
   windows:
+    scoop:
+      buckets:
+        - extras
+        - nerd-fonts
+      apps:
+        - aria2 # auto-improve scoop downloads
+        - fastfetch # system info
+        - fzf # fuzzy finder
+        - starship # prompt config
+        - vfox # toolchain manager
+        - bat # cat with wings
+        - glow # markdown viewer
+        - ripgrep # faster grep respecting .gitignore
+        - extras/bruno # api tester
+        - nerd-fonts/FiraCode # font
     winget:
-      - Bruno.Bruno # api tester
-      - fastfetch # system info
-      - fzf # fuzzy finder
-      - nushell
-      - starship # prompt config
       - prefix-dev.pixi # toolchain manager
-      - Oven-sh.Bun # JS runtime
+      - nu # shell - don't user scoop because it's not updated as often
     choco:
-      - bat # cat with wings
-      - glow # markdown viewer
-      - oh-my-posh # to enable `oh-my-posh font install`
-      - ripgrep # faster grep respecting .gitignore
+
   non_windows:
     brew:
       formulae:
@@ -25,7 +32,7 @@ packages:
         - ripgrep
         - starship
         - pixi
-        - Bun
-        - oven-sh/bun/bun
+        - vfox
+        - font-fira-code-nerd-font
       cask:
         - bruno

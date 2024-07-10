@@ -892,9 +892,9 @@ $env.config = {
 
 # Custom
 
-## ASDF
-$env.ASDF_DIR = '~/.asdf'
-source ~/.asdf/asdf.nu
+# ## ASDF
+# $env.ASDF_DIR = '~/.asdf'
+# source ~/.asdf/asdf.nu
 
 ## Starship
 use ~/.cache/starship/init.nu
