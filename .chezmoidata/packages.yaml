@@ -13,6 +13,7 @@ packages:
         - bat # cat with wings
         - glow # markdown viewer
         - ripgrep # faster grep respecting .gitignore
+        - bun # fast JS runtime
         - extras/bruno # api tester
         - nerd-fonts/FiraCode # font
     winget:
@@ -33,6 +34,7 @@ packages:
         - starship
         - pixi
         - vfox
+        - oven-sh/bun/bun
         - font-fira-code-nerd-font
       cask:
         - bruno
