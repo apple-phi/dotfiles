@@ -7,6 +7,7 @@ packages:
       - nushell
       - starship # prompt config
       - prefix-dev.pixi # toolchain manager
+      - Oven-sh.Bun # JS runtime
     choco:
       - bat # cat with wings
       - glow # markdown viewer
@@ -24,5 +25,7 @@ packages:
         - ripgrep
         - starship
         - pixi
+        - Bun
+        - oven-sh/bun/bun
       cask:
         - bruno
